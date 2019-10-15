@@ -1,0 +1,85 @@
+body {
+  background-color: #90A6D4;  color:#373839;
+}
+
+h2 {
+  color:#0D3557;
+}
+h1 {
+  font-size: 45px;
+  color: rgba(93,151,201,.95);
+  font-family: Verdana;
+}
+.tex {color: #E66363}
+#block1 {
+  width:auto;
+  margin: 0 auto; /* блок по центру */
+  background-image: url(../11-fon-dlya-sayta.jpg);
+    padding: 15px;
+  border: 5px solid rgba(255,255,255);
+  border-radius: 20px;
+  /*.block1 {
+    width:80%;
+    margin: 0 auto;
+    background-image: url(pattern.png);
+    padding: 15px;
+    border: 5px solid rgba(255,255,255);
+    border-radius: 20px;*/
+
+}
+#layer1 {
+  position: relative;
+  height: 480px;
+  left:150px;
+  z-index: 1;
+}
+#layer2 {
+  height: 418px;
+  position: relative;
+  z-index: 500;
+  left: -133px;
+}
+#layer3 {
+  height: 393px;
+position: relative;
+  left:-150px;
+  z-index: 999;
+}
+.img-crop {
+  border: none;
+  border-radius: 0px;
+  transition: 0.7s all;
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
+  -o-filter: grayscale(100%);
+  filter: grayscale(100%);
+
+}
+.img-crop:hover {
+  transform: scale(1.01);
+  -webkit-filter: none;
+ -moz-filter: none;
+ -ms-filter: none;
+ -o-filter: none;
+ filter: none;
+ filter: none; /* IE 6-9 */
+}
+.crop {
+height:200px;
+border: 5px double black;
+border-radius: 15px;
+
+/*  transform-origin: left top;
+  transform: scale(0.2);*/
+  transition: 0.7s all;
+}
+.crop:hover {
+  transform: scale(1.3);
+}
+.img-center {
+  display:block;
+  margin-left:auto;
+  margin-right: auto;
+}
+img {border-radius: 20px;}
